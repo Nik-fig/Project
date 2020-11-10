@@ -1,0 +1,236 @@
+.Head
+{
+	z-index: 1;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+
+	text-transform: uppercase;
+
+	background-color: #FF9330;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	align-items: center;
+	box-shadow: 0 0px 25px 1px #F9B77A;
+
+	 border-bottom: 1.5px solid #693200 ;
+	 border-radius: 0px;
+	 position: fixed;
+	 box-sizing: border-box;
+}
+
+.Head .logo_container
+{
+	z-index: 2;
+	width: 100%;
+}
+.Head .logo{
+		background: white; 
+		border: 1.5px solid #FF9330;
+		border-radius: 150px;
+		height: 50px;
+		width: 50px;
+		margin: 10px auto;
+}	
+.logo a img
+{
+	width: 100%;
+}
+
+.nav_link
+{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.dws_menu
+{
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	border-top: 1px solid white;
+	box-sizing: border-box;
+
+}
+
+
+.dws_menu ul,
+.dws_menu ol
+{
+	list-style: none;
+} 
+.dws_menu > ul
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 10px;
+	padding: 0;
+}
+.dws_menu > ul li
+{
+	text-align: center;
+	transition: all 0.1s linear;
+	width: auto;
+
+}
+.dws_menu > ul li a 
+{
+	color: white;
+	text-shadow:  
+				#693200 1px 1px 0, 
+				#693200 -1px -1px 0, 
+                #693200 -1px 1px 0,
+                #693200 0.6px -0.6px 0;
+	transition: color 0.5s ease 0.1s;
+}
+
+.dws_menu li:hover
+{
+	position: relative;
+	transition: all 0.7s ease;
+	
+	background-color: white;
+	transform: scale(1);
+	box-shadow: 0 0px 20px 3px #FF9330;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.dws_menu li:hover a{
+	color: black;
+	text-shadow: black 0 0 2px;
+}
+
+
+
+.header_burger{
+	display: none;
+
+}
+@media(max-width: 767px){
+	.Head{
+		position: fixed;
+		margin:0;
+		height: auto;
+		width: 100%;
+	}	
+	.Head .logo_container{
+		z-index: 3;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		padding: 10px 15px;
+		box-sizing: border-box;
+		background: #FF9330;
+	}
+	.Head .logo_container .logo{
+		height: 50px;
+		width: 50px;
+		margin: 0;
+	}
+
+	.Head .logo a img{
+		margin:0;
+		width: 100%;
+		height: 100%;
+	}	
+	.header_burger{
+		margin: auto 0;
+		position: relative;
+		display: block;
+		width: 40px;
+		height: 40px;
+	}
+	
+	.dws_menu{
+
+		position: fixed;
+		top: -110%;
+		transition: top 0.5s ease;
+		background: #442100;
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+	.dws_menu ul li a{
+		color: white;
+		}
+	.dws_menu > ul{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 0;
+		padding: 0;
+
+	}
+
+
+	.header_burger:before,
+	.header_burger:after{
+		display: block;
+		position: absolute;
+		left: 0;
+		transition: all 0.3s linear 0s;
+		content: '';
+		background-color: white;
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+	}	
+
+	.header_burger:before{
+		top: 8px;
+	}
+	.header_burger:after{
+		bottom: 8px;
+	}
+
+	.header_burger.active:before{
+		transform: rotate(45deg);
+		top: 18px;
+	}
+	.header_burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 18px;
+	}
+		.dws_menu.active{
+			border: none;
+			position: fixed;
+			top: 72px;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		.dws_menu.active ul li a{
+			color: white;
+		}
+		.dws_menu.active ul li{
+			text-align: left;
+			width: 80%;
+			margin: 10px 0;
+			border-bottom: 2px solid white;
+		}
+		.dws_menu.active li:hover{
+			transition: all 0.5s ease;
+			position: relative;
+			background-color: white;
+			
+			transform: scale(1);
+			box-shadow: 0 0px 20px 3px grey;
+			border-radius: 10px;
+			font-size: 16px;
+			padding: 0 10px;
+		}
+		.dws_menu.active li:hover a{
+			color: black;
+		}
+
+
+}
+
+

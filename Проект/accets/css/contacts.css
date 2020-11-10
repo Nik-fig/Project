@@ -1,0 +1,23 @@
+.wrap{
+	height: auto;
+	padding: 5%;
+}
+.wrap .contacts{
+	display: flex;
+	flex-direction: column;
+}
+.wrap .contact{
+	margin: 10px ;
+	display: flex;
+	flex-direction: row;
+}
+.wrap .contact img{
+}
+.wrap .contact h3{
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
+}
+

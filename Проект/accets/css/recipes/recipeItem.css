@@ -1,0 +1,147 @@
+.main{
+	display: block;
+}
+.gridCont{
+	background: #F9B77A;
+	padding:0 5px;
+	border-top-right-radius: 7%;
+	border-top-left-radius: 7%;
+
+	border-bottom-right-radius: 1%;
+	border-bottom-left-radius: 1%;
+
+	height: auto;
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"img ing"
+	"value ing"
+	"time ing"
+	"body body";
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	font-size: 2vw;
+}
+.gridCont .timeCook h3, .gridCont .ingridients h3, .gridCont .value h3{
+	text-align: center;
+	background: s;
+	width: auto;
+	padding-left: 5px;
+	border-radius: 20px;
+
+}
+.gridCont img,.gridCont div{
+	background:white;
+	padding: 10px;
+	text-align: center;
+	align-items: 
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.gridCont .header{
+	border-top-right-radius: 10px;
+	background: white;
+	grid-area: header;
+	text-align: left;
+	padding: 10px;
+	padding-left: 5%; 
+
+	border-bottom: 3px solid black;
+
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+.gridCont> img{
+	margin: auto;
+	grid-area: img;
+	height: auto;
+	width: 100%;
+	padding: 0;
+}
+
+.gridCont .timeCook{
+	grid-area: time;
+	padding: auto;
+	height: auto;
+}
+.gridCont .timeCook h3{
+	margin-bottom: 20px;
+	}
+.gridCont .ingridients{
+	padding: 5px 10px;
+	grid-area: ing;
+	text-align: left;
+}
+.gridCont .ingridients ul{
+		display: flex;
+		flex-direction: column;
+		list-style-image: url("../../image/1.png"); 
+		padding-left: 10%;
+	}
+.gridCont .ingridients li{
+	
+}
+
+.main .gridCont .value{
+	grid-area: value;
+		text-align: center;
+}
+.main .gridCont .value ul{
+	list-style: none;
+
+}
+.main .gridCont .value li{
+		text-align: left;
+}
+
+.gridCont .mainBody{
+	grid-area: body;
+}
+.gridCont .mainBody ul{
+}
+.gridCont .mainBody ul li{
+	text-align: left;
+}
+
+@media(max-width: 767px){
+	.gridCont{
+	background: #F9B77A;
+	padding:0 5px;
+	border-top-right-radius: 7%;
+	border-top-left-radius: 7%;
+
+	border-bottom-right-radius: 1%;
+	border-bottom-left-radius: 1%;
+
+	height: auto;
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"img img"
+	"ing ing"
+	"time value"
+	"body body";
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	font-size: 2.8vw;
+}
+.main .gridCont .value{
+	grid-area: value;
+		text-align: left;
+}
+.main .gridCont .value ul{
+	padding-left: 7%;
+
+}
+
+
+}
+
+

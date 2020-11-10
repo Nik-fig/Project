@@ -1,0 +1,48 @@
+
+
+.main .description{
+	padding: 0 10%;
+}
+.main .description h1
+{
+	font-size: 3vw;
+}
+.main .description .text{
+	font-size: 1.5vw;
+}
+
+ 
+.delimiter{
+	width: auto;
+	height: 10px;
+	background-color: #693200;
+	box-shadow: 0 0px 40px 1px grey; 
+	border-radius: 10px;
+	margin: 10px;
+
+}
+
+@media(max-width: 767px){
+		.main .description h1
+	{
+		font-size: 3vw;
+	}
+	.main .description .text
+	{
+		font-size: 2vw;
+	}
+	.main{
+		padding-top: 30px;
+	}
+}
+
+@media(max-width: 530px){
+	.main .description h1
+	{
+		font-size: 4vw;
+	}
+	.main .description .text
+	{
+		font-size: 3vw;
+	}
+}

@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	$('.slider').slick(
+		{
+			dots:true,
+			adaptiveHeight:true,
+			slidesToShow:1,
+			speed:1500,
+			autoplay:true,
+			autoplaySpeed:2000,
+			pauseOnFocus:true,
+			pauseOnHover:true,
+			pauseOnDotsHover:true,
+			draggable:false,
+			centerMode:false,
+		});
+}) 

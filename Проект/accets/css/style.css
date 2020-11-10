@@ -1,0 +1,51 @@
+body{ 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #000000;
+	line-height: 1.6;
+	margin: 0;
+	background-image: url("../image/background 1.jpg");
+	background-size: auto auto;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+}
+html, body{
+	min-height: 100vh;
+}
+*,
+*:befor,
+*:after{
+	box-sizing: border-box;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.main{
+	min-height: 100vh;
+	width: 85%;
+	background: white;
+	margin: auto;
+	margin-top: 125px;
+	padding: 15px 5px;
+	box-shadow: 0 0 20px 1px black;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin: 0;
+}
+
+@media(max-width: 767px){
+			.main{
+	margin-top: 60px;
+	}
+
+	body.lock
+	{
+		overflow: hidden;
+	}
+
+}
+
